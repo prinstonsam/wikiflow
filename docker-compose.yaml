@@ -11,6 +11,9 @@ services:
     image: spotify/kafka
     networks:
       - wikiflow-network
+    ports:
+      - "2181:2181"
+      - "9092:9092"
   postgres:
     image: postgres
     environment:
